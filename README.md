@@ -1,5 +1,6 @@
 # py-smart-gardena
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84a54d0be7304ca59c32782b5d99cf73)](https://app.codacy.com/app/grm/py-smart-gardena?utm_source=github.com&utm_medium=referral&utm_content=grm/py-smart-gardena&utm_campaign=Badge_Grade_Dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyPI version](https://badge.fury.io/py/py-smart-gardena.svg)](https://badge.fury.io/py/py-smart-gardena)
 [![Build Status](https://travis-ci.org/grm/py-smart-gardena.svg?branch=master)](https://travis-ci.org/grm/py-smart-gardena)
