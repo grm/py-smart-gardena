@@ -109,13 +109,16 @@ class SmartSystem:
 
     def call_smart_system_service(self, service_id, data):
         args = {"data": data}
+        headers = self.create_header(True)
+
         r = self.oauth_session.put(
-            f"{self.SMART_HOST}/command/{service_id}",
-            headers=self.create_header(True),
+            f"{self.SMART_HOST}/v1/command/{service_id}",
+            headers=headers,
             data=json.dumps(args, ensure_ascii=False),
         )
         if r.status_code != 202:
             response = r.json()
+
             raise Exception(
                 f"{r.status_code} : {response['errors'][0]['title']} - {response['errors'][0]['detail']}"
             )
@@ -218,8 +221,8 @@ class SmartSystem:
         self.locations[location["id"]].update_location_data(location)
 
     def parse_device(self, device):
+        device_id = device["id"].split(":")[0]
         for location in self.locations.values():
-            device_id = device["id"].split(":")[0]
             if device_id in location.devices:
                 location.devices[device_id].update_data(device)
                 break
