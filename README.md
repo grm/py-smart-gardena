@@ -1,3 +1,6 @@
+
+# This repository is now deprecated in favor of https://github.com/py-smart-gardena/py-smart-gardena. We decided to create an organization with [osks](https://github.com/osks) to give you better support with the gardena python library and home assistatn ecosystem.
+
 # py-smart-gardena
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
